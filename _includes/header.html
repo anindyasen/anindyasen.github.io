@@ -1,29 +1,27 @@
 <div id="particles-js">
   <div class="header">
       <h1>
-        <span class="site-title">{{site.username}}</span>
-        <span class="site-description">{{site.user_title}}</span>
-        <span class="site-description"> 
-        <span class="typewrite" data-period="2000" data-type='[ "Student.",
-        "Engineer.", "Learner.", "Researcher." ]'>
+        <span class="site-title">{{ site.username }}</span>
+        <span class="site-description">{{ site.user_title }}</span>
+        <span class="site-description typewrite" data-period="2000" data-type='[ "Engineering leader.", "Systems software expert.", "Always learning.", "Research-driven." ]'>
             <span class="wrap"></span>
-        </span><span>
+        </span>
       </h1>
 
 
 
 
 
-      <div class="header-icons">
-        <a aria-label="Send email" href="#"><i class="icon fa fa-envelope"></i></a>
-        <a aria-label="My Linkedin" target="_blank" href="https://www.linkedin.com/in/anindya92/"><i class="icon fa fa-linkedin" aria-hidden="true"></i></a>
-        <a aria-label="My Github" target="_blank" href="https://github.com/anindyasen"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
+      <div class="header-icons" role="navigation" aria-label="Social links">
+        <a aria-label="Send email" href="mailto:{{ site.email | default: 'anindyasen007@gmail.com' }}"><i class="icon fa fa-envelope" aria-hidden="true"></i></a>
+        <a aria-label="LinkedIn profile" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/anindya92/"><i class="icon fa fa-linkedin" aria-hidden="true"></i></a>
+        <a aria-label="GitHub profile" target="_blank" rel="noopener noreferrer" href="https://github.com/anindyasen"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
       </div>
-      <div class="header-links">
+      <nav class="header-links" aria-label="Page sections">
         <a class="link" href="#about" data-scroll>About Me</a>
         <a class="link" href="#projects" data-scroll>Projects</a>
-        <a class="link" href="https://hacklin.hashnode.dev/">Blog</a>
-      </div>
+        <a class="link" href="https://hacklin.hashnode.dev/" target="_blank" rel="noopener noreferrer">Blog</a>
+      </nav>
   </div>
   <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
 </div>

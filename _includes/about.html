@@ -1,79 +1,54 @@
- <div class="user-details">
-  <h1> My Experience </h1>
-  <p> {{site.user_description}} </p>
+<div class="user-details">
+  <h1>About</h1>
+  <p>{{ site.user_description }}</p>
 </div>
-  <div>
-    <h2>Staff Engineer</h2>          
-    <h3><b>Qualcomm</b> | Bangalore - India | 2025 - Present </h3>
-  <p>
-  •	Led end-to-end AI software stack enablement for Qualcomm Nord DSP automotive platform, architecting and validating QNN framework features including CBS, zero-copy, UDO, VTCM sharing, and multicore execution across multiple neural network models, while reducing validation cycles through automated testing infrastructure that improved test coverage by 40% for development and QA teams. 
-  </p>
-  <p>
-  •	Drove cross-functional collaboration with DSP, platform, performance,
-stability teams across global geographies to resolve 20+ high-priority critical
-issues on ADAS, IVI, and automotive platforms, demonstrating deep
-embedded systems expertise in root cause analysis and system-level
-debugging
-  </p>
+<div class="about-grid">
+  <section class="about-summary">
+    <h2>What I bring</h2>
+    <p>Senior engineering leader with deep experience in embedded systems, network firmware, driver development, and system-level debugging. I focus on producing reliable platform software, aligning hardware and software teams, and adapting quickly to new architectures and emerging technology.</p>
+    <ul class="about-highlights">
+      <li>Systems software and kernel development for embedded and networking platforms</li>
+      <li>Expertise in debugging, performance optimization, and cross-team engineering delivery</li>
+      <li>Strong research orientation for adapting solutions to changing hardware and software requirements</li>
+    </ul>
+  </section>
+
+  <section class="experience-list">
+    <article class="experience-card">
+      <h3>Staff Engineer</h3>
+      <p class="experience-meta"><strong>Qualcomm</strong> | Bangalore - India | 2025 - Present</p>
+      <ul>
+        <li>Led end-to-end AI software stack enablement for Qualcomm Nord DSP automotive platform, architecting and validating QNN framework features such as CBS, zero-copy, UDO, and multicore execution.</li>
+        <li>Delivered automated validation infrastructure that increased test coverage by 40% for development and QA teams.</li>
+        <li>Resolved 20+ priority ADAS, IVI, and automotive platform issues through system-level debugging and cross-team collaboration.</li>
+      </ul>
+    </article>
+
+    <article class="experience-card">
+      <h3>Senior Software Engineer – II</h3>
+      <p class="experience-meta"><strong>CISCO Systems</strong> | Bangalore - India | 2018 - 2024</p>
+      <ul>
+        <li>Enabled real-time line-rate analytics by developing FC switch software for ASICs and SOCs supporting up to 64 Gbps throughput.</li>
+        <li>Built platform-specific applications including ACL, FIB, platform manager, user/kernel drivers, DMA, and TCAM programming APIs.</li>
+        <li>Designed testable system calls and kernel interfaces that reduced execution time by 66% and optimized software-hardware integration.</li>
+      </ul>
+    </article>
+
+    <article class="experience-card">
+      <h3>Software Engineer – II</h3>
+      <p class="experience-meta"><strong>Polaris Networks</strong> | Kolkata - India | 2015 - 2018</p>
+      <ul>
+        <li>Improved packet processing efficiency by 40% in a 4G EPC core using a Netmap-style framework for direct NIC buffer polling.</li>
+        <li>Designed and implemented L3/L4 user-space network stack features such as connection tracking, NAT, and fragmentation/reassembly.</li>
+      </ul>
+    </article>
+
+    <article class="experience-card">
+      <h3>Software Developer Intern</h3>
+      <p class="experience-meta"><strong>NeoGen Labs</strong> | Bangalore - India | 2014</p>
+      <ul>
+        <li>Built a cross-platform mobile application to manage test schedules, reports, and appointment requests for lab customers.</li>
+      </ul>
+    </article>
+  </section>
 </div>
-  <div>
-    <h2>Senior Software Engineer – II</h2>          
-    <h3><b>CISCO Systems</b> | Bangalore - India | 2018 - 2024</h3>
-  <p>
-  •	Achieved a 100% increase in I/O data rate and enabled real-time  line-rate analytics by developing new family of FC switches equipped with ASICs and SOCs supporting throughput up to 64 Gbps. 
-  </p>
-  <p>
-  •	Development includes creation of critical platform-specific applications like ACL, FIB, platform manager, user and kernel space drivers supporting interrupts, DMA, CLIs, hardware programming APIs, TCAM programming, statistics etc. into a comprehensive image. 
-  </p>
-  <p>
-  •	Designed scalable and testable system calls in the OS for FC switches to streamline access to critical hardware functionalities from user-space applications which resulted in 66% reductions in execution time.
-  </p>
-  <p>
-   •	Engineered a minimum10% reduction in system power consumption through strategic streamlining and optimization of software-hardware integration. Led the development of kernel drivers and its userspace application for FPGAs with x86 CPU PCIe endpoints, handling interrupts, I2C/SPI controllers for fans, sensors, NVRAM, LEDs, power supply, and secure boot protocols.
-  </p>
-</div>
-<div>
-    <h2>Software Engineer – II</h2>          
-    <h3><b>Polaris Networks</b> | Kolkata - India | 2015 - 2018</h3>
-    <p>
-      •	Drove a 40% increase in packet processing efficiency within 4G EPC Core, achieving speeds of up to 10G line rate by implementing a Netmap-based framework, akin to DPDK, for polling packets directly from NIC buffer rings to the user space, bypassing the Linux kernel.
-    </p>
-    <p>
-      •	Designed and developed critical L3/L4 network stack functionalities in user-space, including connection tracking, NAT, and packet fragmentation and reassembly, that significantly surpassing the kernel performance.
-    </p>
-</div>
-<div>
-    <h2>Software Developer Intern</h2>          
-    <h3><b>NeoGen Labs </b> | Bangalore - India | 2014 </h3>
-    <p>
-      Created mobile application for android and windows platform to get information about various tests, request reports/kits or order a test take appointment.[URL] 
-    </p>
-</div>
-<!---
-</div>
-    <div class="tech">
-      <h2>Design</h2>
-      <i class="devicon-html5-plain-wordmark"></i>
-      <i class="devicon-bootstrap-plain-wordmark colored"></i>
-      <i class="devicon-sass-original colored"></i>
-      <p>Mumblecore hexagon kombucha, pitchfork four loko raclette intelligentsia master cleanse.
-        Vinyl XOXO lumbersexual</p>
-    </div>
-    <div class="tech">
-      <h2>Code</h2>
-      <i class="devicon-javascript-plain colored"></i>
-      <i class="devicon-react-original-wordmark colored"></i>
-      <i class="devicon-nodejs-plain-wordmark"></i>
-      <p>Mumblecore hexagon kombucha, pitchfork four loko raclette intelligentsia master cleanse.
-        Vinyl XOXO lumbersexual</p>
-    </div>
-    <div class="tech">
-      <h2>Tools</h2>
-      <i class="devicon-git-plain"></i>
-      <i class="devicon-gulp-plain colored"></i>
-      <i class="devicon-atom-original-wordmark"></i>
-      <p>Mumblecore hexagon kombucha, pitchfork four loko raclette intelligentsia master cleanse.
-        Vinyl XOXO lumbersexual</p>
-    </div>
-</div>
--->
